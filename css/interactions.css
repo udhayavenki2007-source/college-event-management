@@ -1,0 +1,247 @@
+.fxec-modal[hidden] {
+    display: none;
+}
+
+.fxec-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    overflow-y: auto;
+    background: rgba(8, 20, 43, .68);
+    backdrop-filter: blur(5px);
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.fxec-modal-panel {
+    position: relative;
+    width: min(100%, 540px);
+    max-height: min(90vh, 850px);
+    overflow-y: auto;
+    padding: 34px;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 24px 80px rgba(15, 23, 42, .3);
+}
+
+.fxec-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #1e293b;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.fxec-modal-content h2 {
+    margin: 4px 38px 8px 0;
+    color: #1e293b;
+    font: 700 clamp(1.65rem, 5vw, 2.1rem)/1.2 'Playfair Display', serif;
+}
+
+.fxec-modal-eyebrow {
+    margin: 0;
+    color: #2563eb;
+    font-size: .76rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.fxec-modal-copy,
+.fxec-modal-note {
+    color: #64748b;
+}
+
+.fxec-modal-copy {
+    margin: 0 0 20px;
+}
+
+.fxec-modal-note {
+    margin: 17px 0 0;
+    font-size: .78rem;
+}
+
+.fxec-modal-form {
+    display: grid;
+    gap: 15px;
+}
+
+.fxec-modal .field {
+    display: grid;
+    gap: 6px;
+}
+
+.fxec-modal .field label {
+    color: #334155;
+    font-size: .86rem;
+    font-weight: 600;
+}
+
+.fxec-modal .field input,
+.fxec-modal .field select {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #fff;
+    color: #1e293b;
+    font: inherit;
+}
+
+.fxec-modal .field input:focus,
+.fxec-modal .field select:focus {
+    outline: 3px solid rgba(37, 99, 235, .17);
+    border-color: #2563eb;
+}
+
+.fxec-modal-form .btn,
+.fxec-modal-content > .btn {
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.fxec-success-icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 1.4rem;
+}
+
+.fxec-toast {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 1100;
+    max-width: min(420px, calc(100% - 32px));
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: #0f172a;
+    color: #fff;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, .25);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity .2s, transform .2s;
+}
+
+.fxec-toast.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-nav-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #dbe4ef;
+    border-radius: 10px;
+    background: #fff;
+    color: #1e293b;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.filter {
+    cursor: pointer;
+    transition: background .2s, color .2s, border-color .2s;
+}
+
+.filter.is-active {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #fff;
+}
+
+.event-card[hidden] {
+    display: none;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-image {
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+.event-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-body p {
+    flex: 1;
+}
+
+.event-card .btn {
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    .nav-inner {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .mobile-nav-toggle {
+        display: grid;
+        place-items: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 14px 14px;
+        border: 1px solid #e2e8f0;
+        border-top: 0;
+        border-radius: 0 0 14px 14px;
+        background: #fff;
+        box-shadow: 0 14px 25px rgba(15, 23, 42, .12);
+    }
+
+    .nav-links.is-open {
+        display: grid;
+    }
+
+    .nav-links a {
+        padding: 10px 4px;
+    }
+
+    .nav-links .nav-cta {
+        justify-content: center;
+        margin-top: 6px;
+    }
+
+    .fxec-modal-panel {
+        padding: 28px 22px;
+    }
+}

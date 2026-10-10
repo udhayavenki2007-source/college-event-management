@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | FXEC Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/interactions.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="index.html">
+                <img src="images/college-logo.svg" alt="FXEC">
+                <div>FRANCIS XAVIER<br>ENGINEERING COLLEGE<br><span>EVENTS PORTAL</span></div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="contact.html">Contact</a>
+                <a class="btn nav-cta" href="student-login.html">Student Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <p class="eyebrow">We are here to help</p>
+            <h1>Let's make<br>something happen.</h1>
+            <p>Questions about an event, partnership or participation? The FXEC Events team would love to hear from you.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section contact-section">
+            <div class="container contact-grid">
+                <aside class="contact-info">
+                    <span class="contact-info-kicker"><i class="fa-regular fa-comments" aria-hidden="true"></i> Let's talk</span>
+                    <h2>Contact the events team</h2>
+                    <p>Reach us during college hours. We will get back to you as soon as possible.</p>
+
+                    <div class="contact-line">
+                        <span class="contact-line-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                        <div><strong>Visit us</strong><span>Francis Xavier Engineering College,<br>Tirunelveli, Tamil Nadu, India</span></div>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-line-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                        <div><strong>Email us</strong><a href="mailto:events@francisxavier.ac.in">events@francisxavier.ac.in</a></div>
+                    </div>
+                    <div class="contact-line">
+                        <span class="contact-line-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                        <div><strong>Call us</strong><a href="tel:+914620000000">+91 462 000 0000</a></div>
+                    </div>
+                    <div class="contact-info-footer">
+                        <span>Follow the FXEC community</span>
+                        <div class="socials">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="contact-form" aria-labelledby="contact-form-title">
+                    <div class="contact-form-heading">
+                        <span class="contact-form-icon"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i></span>
+                        <div>
+                            <p class="eyebrow">Send a message</p>
+                            <h2 id="contact-form-title">How can we help?</h2>
+                            <p>Fill in the details and our team will be in touch.</p>
+                        </div>
+                    </div>
+
+                    <form action="#">
+                        <div class="contact-fields">
+                            <div class="field">
+                                <label for="cname"><i class="fa-regular fa-user" aria-hidden="true"></i> Your name</label>
+                                <div class="contact-input-wrap">
+                                    <input id="cname" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Johnson" minlength="2" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="cemail"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Email address</label>
+                                <div class="contact-input-wrap">
+                                    <input id="cemail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                            <div class="field contact-field-full">
+                                <label for="subject"><i class="fa-solid fa-tag" aria-hidden="true"></i> Subject</label>
+                                <div class="contact-input-wrap">
+                                    <input id="subject" name="subject" type="text" placeholder="What is this about?" required>
+                                </div>
+                            </div>
+                            <div class="field contact-field-full">
+                                <label for="message"><i class="fa-regular fa-message" aria-hidden="true"></i> Your message</label>
+                                <div class="contact-input-wrap contact-textarea-wrap">
+                                    <textarea id="message" name="message" placeholder="Tell us how we can help..." minlength="10" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn contact-submit" type="submit">
+                            <span>Send message</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                        <p class="contact-privacy"><i class="fa-solid fa-lock" aria-hidden="true"></i> Your details are only used to respond to your enquiry.</p>
+                    </form>
+                </section>
+            </div>
+        </section>
+
+        <section class="section light-section">
+            <div class="container">
+                <p class="eyebrow">Find FXEC</p>
+                <h2 class="section-title">Visit the campus</h2>
+                <div class="map">
+                    <div>
+                        <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                        <h3>Francis Xavier Engineering College</h3>
+                        <p>College Road, Tirunelveli, Tamil Nadu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><h4>FXEC Events</h4><p>Creating campus moments that become milestones.</p></div>
+            <div><h4>Explore</h4><div class="footer-links"><a href="events.html">All Events</a><a href="gallery.html">Gallery</a></div></div>
+            <div><h4>Student Hub</h4><div class="footer-links"><a href="student-login.html">Login</a><a href="student-register.html">Register</a></div></div>
+            <div><h4>Contact</h4><p><a href="mailto:events@francisxavier.ac.in">events@francisxavier.ac.in</a></p></div>
+        </div>
+        <div class="container copyright">© 2026 Francis Xavier Engineering College.</div>
+    </footer>
+    <script src="js/app.js" defer></script>
+</body>
+</html>
